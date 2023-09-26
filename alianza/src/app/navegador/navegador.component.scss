@@ -1,0 +1,29 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 230x;
+}
+
+.sidenav .mat-toolbar {
+  background-image: url("../../environments/images/images.png");
+  background-size: contain;
+  display: flex;
+  flex-flow: row;
+  margin-left: 20px;
+  margin-top: 20px;
+
+}
+
+.mat-toolbar.mat-primary {
+  background: inherit;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.mat-list-item:hover {
+  background-color: #00d9ff;
+}
+
