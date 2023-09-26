@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <button class="btn btn-info" (click)="openNewClients()"><i style="color: black;" class="fa fa-plus"></i>&nbsp;New</button>
+      <button class="btn btn-success"><i style="color: black;" class="fa fa-file-text"></i>&nbsp;Export</button>
+    </div>
+    <div class="card-body">
+      <input placeholder="Enter Shared key" style="height: 38px; border-top-left-radius: 6px; border-bottom-left-radius:6px;"/>
+      <button class="btn btn-secondary">Search</button>
+      <br>
+      <h3 style="color: #0080FF;  text-align: left;">Clients</h3>
+      <app-list></app-list>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,134 @@
+.btn-info {
+  background-color: #0080FF;
+  height: 45px;
+  width: 100px;
+  color: #FFFFFF;
+}
+
+.btn-success {
+  height: 45px;
+}
+
+.btn-secondary {
+  margin-top: -3px;
+  margin-left: 30px;
+  height: 38px;
+}
+.btn-warning{
+  background-color: #ffffff;
+  border: 0;
+  height: 45px;
+  width: 30px;
+  border-radius: 6px;
+  color: #333333;
+
+}
+
+.btn-info:hover,
+.btn-info:active,
+.btn-info.hover {
+  background-color: #084655;
+}
+
+.body{
+  margin-top: 20px;
+  background-color: inherit;
+  text-align: center;
+}
+
+.container {
+  margin-top: 450px;
+  padding: 20px;
+
+  .card {
+    margin-top: 20px;
+    border-radius: 10px;
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .btn {
+        padding: 5px 10px;
+      }
+    }
+
+    .card-body {
+      h3 {
+        color: #0080FF;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+
+      input {
+        height: 28px;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+        width: 60%; // Adjust width as needed
+        margin-right: 5px;
+      }
+
+      .btn-search {
+        background-color: #0080FF;
+        border-color: #d4d4d4 ;
+        height: 28px;
+        width: 100px;
+        border-radius: 6px;
+        color: #FFFFFF;
+      }
+
+      table {
+        width: 100%;
+        font-size: 14px;
+
+        th, td {
+          padding: 8px;
+        }
+
+        th {
+          background-color: #f0f0f0;
+        }
+
+        td {
+          border-bottom: 1px solid #ccc;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    .card {
+      .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .btn {
+          margin-top: 10px;
+          margin-left: 0;
+        }
+      }
+
+      .card-body {
+        input {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+
+        .btn-search {
+          width: 100%;
+        }
+
+        table {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+
