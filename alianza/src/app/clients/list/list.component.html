@@ -1,18 +1,24 @@
-<table class="table table-sm table-bordered table-striped table-hover">
-  <thead>
-    <tr style="color: black;" class="text-center">
+<div class="list-container">
+<div class="form-group">
+  <input style="border-color: black;" type="text" class="form-control" placeholder="Advanced Search..." [(ngModel)]="searchText" (input)="filterClients()">
+</div>
+<div class="div-with-line">
+</div>
+<br>
+<div class="table-responsive">
+<table  class="row-border hover table table-striped table-bordered row-border hover">
+  <thead class="text-center">
+    <tr class="text-center">
       <th>Shared Key</th>
       <th>Bussiness ID</th>
       <th>E-mail</th>
       <th>Phone</th>
       <th>Data Added</th>
       <th>Actions</th>
-
     </tr>
-
   </thead>
   <tbody>
-    <tr *ngFor="let clients of client" class="text-center">
+    <tr *ngFor="let clients of clients">
       <td>{{clients.skey}}</td>
       <td>{{clients.business_id}}</td>
       <td>{{clients.email}}</td>
@@ -20,10 +26,12 @@
       <td>{{clients.start_date}}</td>
       <td>
         <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
-        <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
+        <button class="btn btn-danger" (click)="deleteClient(clients.id)"><i class="fa fa-trash"></i></button>
       </td>
     </tr>
-
   </tbody>
-
 </table>
+</div>
+</div>
+
+

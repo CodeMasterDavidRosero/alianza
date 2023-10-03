@@ -1,6 +1,6 @@
-export class Clients{
-  id:number;
-  skey:string;
+export class Clients {
+  id: number;
+  skey: string;
   business_id: string;
   email: string;
   phone: string;

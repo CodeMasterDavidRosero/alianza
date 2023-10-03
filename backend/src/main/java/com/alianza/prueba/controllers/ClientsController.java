@@ -19,7 +19,7 @@ public class ClientsController {
     public ArrayList<ClientsModel> showList(){
         return clientsService.showList();
     }
-    @PostMapping()
+    @PostMapping("/create")
     public ClientsModel saveClints(@RequestBody ClientsModel clients){
         return this.clientsService.SaveClients(clients);
     }

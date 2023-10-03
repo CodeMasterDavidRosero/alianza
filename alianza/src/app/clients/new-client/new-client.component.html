@@ -3,69 +3,58 @@
   <button type="button" class="btn btn-danger" (click)="closeModal()"><span aria-hidden="true">&times;</span>
   </button>
 </div>
+
 <div class="modal-body" style="background-color: rgb(0, 137, 155);">
 
-  <div class="form-group row">
-    <div class="col-md-3">
-      <label for="skey" class="text-white">Skey:</label>
-    </div>
-    <div class="col-md-9">
-      <input type="text" class="form-control" id="skey" [(ngModel)]="client.skey">
+  <form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <div class="col-md-12">
+      <label class="text-white">Skey:</label>
+      <input type="text" class="form-control" id="skey" [(ngModel)]="client.skey" name="skey" required>
     </div>
   </div>
-  <br>
 
-  <div class="form-group row">
-    <div class="col-md-3">
+  <div class="form-group">
+    <div class="col-md-12">
       <label for="business_id" class="text-white">Business ID:</label>
-    </div>
-    <div class="col-md-9">
-      <input type="text" class="form-control" id="business_id" [(ngModel)]="client.business_id">
+      <input type="text" class="form-control" id="business_id" [(ngModel)]="client.business_id" name="business_id" required>
     </div>
   </div>
-  <br>
 
-  <div class="form-group row">
-    <div class="col-md-3">
+  <div class="form-group">
+    <div class="col-md-12">
       <label for="email" class="text-white">Email:</label>
-      </div>
-      <div class="col-md-9">
-        <input type="email" class="form-control" id="email" [(ngModel)]="client.email">
-      </div>
+      <input type="email" class="form-control" id="email" [(ngModel)]="client.email" name="email" required>
     </div>
-  <br>
+  </div>
 
-  <div class="form-group row">
-    <div class="col-md-3">
+  <div class="form-group">
+    <div class="col-md-12">
       <label for="phone" class="text-white">Phone:</label>
-    </div>
-    <div class="col-md-9">
-      <input type="text" class="form-control" id="phone" [(ngModel)]="client.phone">
+      <input type="number" class="form-control" id="phone" [(ngModel)]="client.phone" name="phone" required>
     </div>
   </div>
-  <br>
 
-  <div class="form-group row">
-    <div class="col-md-3">
+  <div class="form-group">
+    <div class="col-md-12">
       <label for="start_date" class="text-white">Start Date:</label>
-    </div>
-    <div class="col-md-9">
-      <input type="date" class="form-control" id="start_date" [(ngModel)]="client.start_date">
+      <input type="date" class="form-control" id="start_date" [(ngModel)]="client.start_date" name="start_date" required>
     </div>
   </div>
-  <br>
 
-  <div class="form-group row">
-    <div class="col-md-3">
+  <div class="form-group">
+    <div class="col-md-12">
       <label for="end_date" class="text-white">End Date:</label>
-    </div>
-    <div class="col-md-9">
-      <input type="date" class="form-control" id="end_date" [(ngModel)]="client.end_date">
+      <input type="date" class="form-control" id="end_date" [(ngModel)]="client.end_date" name="end_date" required>
     </div>
   </div>
-  <br>
+  </form>
+</div>
 
 <div class="modal-footer" style="background-color: rgb(0, 137, 155);">
   <button type="button" class="btn btn-secondary" (click)="closeModal()">Close</button>
-  <button type="button" class="btn btn-primary">Save</button>
+  <button type="button" class="btn btn-primary" (click)="createClient(client)" >Save</button>
 </div>
+
+
+
