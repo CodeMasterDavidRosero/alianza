@@ -1,0 +1,10 @@
+.div-with-line {
+  border-bottom: 2px solid #148ed4; /* Puedes personalizar el color y el grosor de la línea */
+  padding-bottom: 16px; /* Opcional: Agrega espacio adicional en la parte inferior del contenido */
+  padding-top: 10px;
+}
+
+.list-container {
+  max-height: 500px; /* Ajusta la altura máxima según tus necesidades */
+  overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
+}

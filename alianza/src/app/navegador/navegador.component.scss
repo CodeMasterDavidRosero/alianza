@@ -10,9 +10,9 @@
   background-image: url("../../environments/images/images.png");
   background-size: contain;
   display: flex;
-  flex-flow: row;
   margin-left: 20px;
   margin-top: 20px;
+  overflow-x: hidden;
 
 }
 
